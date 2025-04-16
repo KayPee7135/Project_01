@@ -1,0 +1,126 @@
+/* Background gradient inspired by your image */
+body {
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4, #fad0c4, #a18cd1, #fbc2eb, #a6c1ee, #6dd5fa, #2980b9);
+    background-size: 400% 400%;
+    animation: gradientBG 20s ease infinite;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Smooth gradient animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Job card and form area styling */
+.job-card, form {
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Input field focus */
+input:focus, textarea:focus {
+    border-color: #6dd5fa;
+    box-shadow: 0 0 0 0.2rem rgba(109, 213, 250, 0.25);
+}
+
+/* Buttons hover effect */
+.btn-primary:hover,
+.btn-success:hover {
+    filter: brightness(1.1);
+}
+
+/* Center text better */
+.text-center h1, h2 {
+    color: white;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Success and error messages styling */
+.text-success {
+    color: #28a745;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.text-danger {
+    color: #dc3545;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Job details alert styling */
+.alert-info {
+    background-color: rgba(109, 213, 250, 0.2);
+    border: 1px solid #6dd5fa;
+    color: #31708f;
+    font-weight: bold;
+}
+
+/* Form submit button styling */
+button[type="submit"] {
+    background: linear-gradient(90deg, #6dd5fa, #2980b9);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem; /* Keep font size */
+    padding: 6px 12px; /* Reduced padding */
+    width: auto; /* Adjust width to fit content */
+    height: auto; /* Adjust height to fit content */
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(90deg, #2980b9, #6dd5fa);
+    transform: scale(1.05);
+}
+
+/* Apply Now button styling */
+.apply-btn {
+    font-size: 1rem; /* Keep font size */
+    padding: 6px 12px; /* Reduced padding */
+    width: auto; /* Adjust width to fit content */
+    height: auto; /* Adjust height to fit content */
+    border-radius: 6px; /* Slightly smaller border radius */
+    transition: all 0.3s ease;
+}
+
+.apply-btn:hover {
+    background-color: #0056b3;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Back to homepage button styling */
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem; /* Keep font size */
+    padding: 6px 12px; /* Reduced padding */
+    width: auto; /* Adjust width to fit content */
+    height: auto; /* Adjust height to fit content */
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .job-card, form {
+        padding: 15px;
+    }
+
+    .text-center h1, h2 {
+        font-size: 1.5rem;
+    }
+}
